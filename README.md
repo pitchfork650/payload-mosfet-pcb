@@ -9,10 +9,10 @@ The object must land intact and cannot free-fall!
 
 # Design Priorities:
 
-1: Reliability and Simplicity - This is the fallback plan and cannot fail!
-2: Aerodynamics - We cannot add excessive drag to the airframe.
-3: Weight - We are trying to stay under a total airframe weight of 18lb (8.16kg).
-4: Power - We cannot draw excessive amounts of power for our system.
+1: Reliability and Simplicity - This is the fallback plan and cannot fail!  
+2: Aerodynamics - We cannot add excessive drag to the airframe.  
+3: Weight - We are trying to stay under a total airframe weight of 18lb (8.16kg).  
+4: Power - We cannot draw excessive amounts of power for our system.  
 
 # Current Design:
 

@@ -5,7 +5,7 @@
 	(uuid "319cef0f-bf85-495a-8464-9339d157ff46")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x02"
+		(symbol "Connector_Generic_MountingPin:Conn_01x02_MountingPin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -25,14 +25,15 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
+			(property "Value" "Conn_01x02_MountingPin"
+				(at 1.27 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -57,7 +58,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -79,7 +80,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -90,7 +91,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x02_1_1"
+			(symbol "Conn_01x02_MountingPin_1_1"
 				(rectangle
 					(start -1.27 1.27)
 					(end 1.27 -3.81)
@@ -124,6 +125,26 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy -1.016 -4.572) (xy 1.016 -4.572)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Mounting"
+					(at 0 -4.191 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
 				(pin passive line
 					(at -5.08 0 0)
 					(length 3.81)
@@ -153,6 +174,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1072,6 +1111,18 @@
 		(color 0 0 0 0)
 		(uuid "f8840098-94e5-43ad-9e1d-968dc491e7ef")
 	)
+	(no_connect
+		(at 96.52 87.63)
+		(uuid "404ae01b-3086-4fd9-b6db-828afb8785ed")
+	)
+	(no_connect
+		(at 125.73 78.74)
+		(uuid "6072c55f-3400-4c3c-a691-15f9502d90f8")
+	)
+	(no_connect
+		(at 85.09 60.96)
+		(uuid "8163d58e-f1ec-4bc7-8fae-e66126f4373a")
+	)
 	(wire
 		(pts
 			(xy 113.03 92.71) (xy 113.03 107.95)
@@ -1233,8 +1284,8 @@
 		(uuid "f1904f0b-ef85-4658-9c55-67d552ea44a8")
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 85.09 68.58 180)
+		(lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin")
+		(at 125.73 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1243,29 +1294,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0f626e96-646d-4842-9398-20a5381b004d")
-		(property "Reference" "Vin1"
-			(at 85.09 59.69 0)
+		(uuid "024c87fd-5298-46f8-a4fb-22e3c778842e")
+		(property "Reference" "emag1"
+			(at 128.27 71.4755 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02"
-			(at 85.09 62.23 0)
+		(property "Value" "JST_PH_2PIN"
+			(at 128.27 74.0155 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
-			(at 85.09 68.58 0)
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
+			(at 125.73 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1275,8 +1328,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 85.09 68.58 0)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/17311.pdf"
+			(at 125.73 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1286,8 +1339,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 85.09 68.58 0)
+		(property "Description" "Generic JST_PH_2PIN SMT connector, for magnet connection https://www.adafruit.com/product/1769?srsltid=AYCX9vKmg7AnkadIvNh6u-C9kYsipoDEGgflLF5kSu7d5kptqncLCG7TtIA"
+			(at 125.73 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1296,17 +1349,20 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "MP"
+			(uuid "3fd5a182-c1b8-40a2-a8f8-1cd9ae122762")
 		)
 		(pin "2"
-			(uuid "295061aa-3211-480d-8185-07da85d320cb")
+			(uuid "3b881723-eeb6-4d2e-a06a-f1b3e3d37dc0")
 		)
 		(pin "1"
-			(uuid "07f45cdb-23b7-458c-8f4f-91cafcc90255")
+			(uuid "7a0e9e9f-c402-4f78-93f6-14fd18041936")
 		)
 		(instances
 			(project "mosfet_board"
 				(path "/319cef0f-bf85-495a-8464-9339d157ff46"
-					(reference "Vin1")
+					(reference "emag1")
 					(unit 1)
 				)
 			)
@@ -1391,88 +1447,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 125.73 71.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2fa21aba-d825-4a0e-82df-e6a353ef28df")
-		(property "Reference" "emagnet1"
-			(at 128.27 71.1199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 128.27 73.6599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
-			(at 125.73 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 125.73 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8c260c18-b812-49bc-914e-ef34b584cf27")
-		)
-		(pin "2"
-			(uuid "4412cf8e-93aa-4598-b76b-e5a0d2d79e01")
-		)
-		(instances
-			(project "mosfet_board"
-				(path "/319cef0f-bf85-495a-8464-9339d157ff46"
-					(reference "emagnet1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_FET:IRLZ34N")
 		(at 118.11 92.71 0)
 		(unit 1)
@@ -1495,7 +1469,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLZ34N"
+		(property "Value" "SSM3K339R,LF"
 			(at 124.46 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1506,7 +1480,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 			(at 123.19 94.615 0)
 			(hide yes)
 			(show_name no)
@@ -1561,7 +1535,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
+		(lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin")
 		(at 96.52 95.25 180)
 		(unit 1)
 		(body_style 1)
@@ -1571,28 +1545,30 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "901a1b33-64ce-4fa1-b39b-62eb6727b0a2")
+		(uuid "6ec9fc7b-bc4d-4842-b896-541ac45536de")
 		(property "Reference" "Data1"
-			(at 96.52 86.36 0)
+			(at 93.98 92.3543 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02"
-			(at 96.52 88.9 0)
+		(property "Value" "JST_PH_2PIN"
+			(at 93.98 94.8943 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
 			(at 96.52 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -1603,7 +1579,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/17311.pdf"
 			(at 96.52 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -1614,7 +1590,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic JST_PH_2PIN SMT connector, for data connection https://www.adafruit.com/product/1769?srsltid=AYCX9vKmg7AnkadIvNh6u-C9kYsipoDEGgflLF5kSu7d5kptqncLCG7TtIA"
 			(at 96.52 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -1624,12 +1600,15 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "MP"
+			(uuid "559345ff-34e6-4310-8ebf-36d407fec9a2")
 		)
 		(pin "2"
-			(uuid "efead4cd-7db7-4d2e-b6c3-c68fff717d69")
+			(uuid "707d837b-8d84-4610-9d1b-b48339f40339")
 		)
 		(pin "1"
-			(uuid "ce1dcb7d-3a92-46fe-898a-48500328a1b2")
+			(uuid "bfd04b0b-70d9-4fbc-8327-12593c439c5c")
 		)
 		(instances
 			(project "mosfet_board"
@@ -1651,7 +1630,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a9d9bf1a-8eed-4219-8fc9-00cbe96f696c")
-		(property "Reference" "flyback1"
+		(property "Reference" "D1"
 			(at 110.998 73.152 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1663,7 +1642,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 108.458 75.184 90)
+			(at 109.982 75.184 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1673,7 +1652,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-15_P10.16mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 113.03 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -1684,7 +1663,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/1N4148W-G-RHG/7374103"
 			(at 113.03 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -1695,7 +1674,7 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
+		(property "Description" "flyback diode, https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/1N4148W-G-RHG/7374103"
 			(at 113.03 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -1737,7 +1716,7 @@
 		(instances
 			(project "mosfet_board"
 				(path "/319cef0f-bf85-495a-8464-9339d157ff46"
-					(reference "flyback1")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -1754,8 +1733,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b180967a-4282-421f-8d7d-3d8129c75a42")
-		(property "Reference" "protectionR1"
-			(at 109.474 87.63 90)
+		(property "Reference" "100Ω11"
+			(at 105.664 89.662 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1765,7 +1744,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 107.95 89.916 90)
+			(at 105.41 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1774,7 +1753,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 105.41 94.488 90)
 			(hide yes)
 			(show_name no)
@@ -1796,8 +1775,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "100 ohm 0603 SMD, protection resistor. works to protect the data board from spikes. https://www.digikey.com/en/products/detail/vishay-dale/CRCW0603100RFKEA/1174554"
 			(at 105.41 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field5" ""
+			(at 105.41 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1816,7 +1806,92 @@
 		(instances
 			(project "mosfet_board"
 				(path "/319cef0f-bf85-495a-8464-9339d157ff46"
-					(reference "protectionR1")
+					(reference "100Ω11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin")
+		(at 85.09 68.58 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6b6d349-3c09-48ef-b813-cf35cdb4b54c")
+		(property "Reference" "Vin1"
+			(at 82.55 65.6843 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JST_PH_2PIN"
+			(at 82.55 68.2243 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
+			(at 85.09 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/17311.pdf"
+			(at 85.09 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic JST_PH_2PIN SMT connector, for Voltage in https://www.adafruit.com/product/1769?srsltid=AYCX9vKmg7AnkadIvNh6u-C9kYsipoDEGgflLF5kSu7d5kptqncLCG7TtIA"
+			(at 85.09 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "MP"
+			(uuid "7f23d360-69ba-487e-9006-b53ce54c6518")
+		)
+		(pin "1"
+			(uuid "e878fffd-97e2-4e53-ac47-55f0584ed47d")
+		)
+		(pin "2"
+			(uuid "e19b3f4a-cbb4-489a-83f5-d4d65f0e6ad9")
+		)
+		(instances
+			(project "mosfet_board"
+				(path "/319cef0f-bf85-495a-8464-9339d157ff46"
+					(reference "Vin1")
 					(unit 1)
 				)
 			)
@@ -1990,8 +2065,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e5aefc5d-5d8f-4cbc-83f1-3893027c5fa3")
-		(property "Reference" "pulldown1"
-			(at 113.284 110.236 90)
+		(property "Reference" "10k1"
+			(at 116.84 110.236 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2001,7 +2076,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 113.538 112.522 90)
+			(at 116.84 108.204 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2010,7 +2085,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 116.84 109.728 90)
 			(hide yes)
 			(show_name no)
@@ -2032,7 +2107,7 @@
 				)
 			)
 		)
-		(property "Description" "pulldown resistor"
+		(property "Description" "10k pulldown resistor, works to let MOSFET gate voltage potential to bleed to gnd. https://www.digikey.com/en/products/detail/vishay-dale/CRCW060310K0FKEA/1174782"
 			(at 116.84 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -2052,7 +2127,7 @@
 		(instances
 			(project "mosfet_board"
 				(path "/319cef0f-bf85-495a-8464-9339d157ff46"
-					(reference "pulldown1")
+					(reference "10k1")
 					(unit 1)
 				)
 			)

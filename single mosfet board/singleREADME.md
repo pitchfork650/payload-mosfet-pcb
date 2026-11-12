@@ -37,20 +37,29 @@ Post creation notes:
 
 
 11/11/2026 eleven eleven V3 edit:
+Electromagnets are now 24V. 0.5mm traces all around, 
 Moving to SMD to save space and cost and small spec differences. Everything is relocated.
 
 - Mosfet changed to N channel SSM3K339R,LF   -> footprint: Package_TO_SOT_SMD:SOT-23_Handsoldering
   (https://www.digikey.com/en/products/detail/toshiba-semiconductor-and-storage/SSM3K339R-LF/4781036)
-    allows for lower Vgs (1.2 vs 2V), lower gate charge (2.4nC vs 25nC). tradeoffs: higher Rds (185mohm @1A vs 35mOhm @16A), lower max Vds (40V vs 55V), lower max current (2A vs 30A)
+        allows for lower Vgs (1.2 vs 2V), lower gate charge (2.4nC vs 25nC). tradeoffs: higher Rds (185mohm @1A vs 35mOhm @16A), lower max Vds (40V vs 55V), lower max current (2A vs 30A)
 - Resistors changed to 0603 SMD package, Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
-    hand solder size so we dont need a hotplate or heat gun
+        hand solder size so we dont need a hotplate or heat gun
+        100oΩ: https://www.digikey.com/en/products/detail/vishay-dale/CRCW0603100RFKEA/1174554
+        10kΩ: https://www.digikey.com/en/products/detail/vishay-dale/CRCW060310K0FKEA/1174782
+- Diode changed to SOD123 SMD package, https://www.digikey.com/en/products/detail/taiwan-semiconductor-corporation/1N4148W-G-RHG/7374103
 - Electromagnets have been changed to 24V from 5V, allowing for less current draw.
-    power usage still roughly 2.4-5W per magnet, energized for a split second. 
-    power trace length changed from 1mm to 0.5mm (current passed changed from 1-2A to 0.1-0.2A, and clearance reasons), now consistent with data trace width
+        power usage still roughly 2.4-5W per magnet, energized for a split second. 
+        power trace length changed from 1mm to 0.5mm (current passed changed from 1-2A to 0.1-0.2A, and clearance reasons), now consistent with data trace width
 - Connectors changed to Adafruit JST-PH 2-Pin SMT right angle connectors
   (https://www.adafruit.com/product/1769?srsltid=AYCX9vKmg7AnkadIvNh6u-C9kYsipoDEGgflLF5kSu7d5kptqncLCG7TtIA)
-    consistent with SMD, slightly smaller package. 
-    rated for 100V, 2A
+  consistent with SMD, slightly smaller package.
+  rated for 100V, 2A
 
+
+11/12/2026 V4: 
+Added GND fill, finished ground fill
+Gerber files generated, drill files generated. Awaiting final schematic review.
+Files have been updated.
 
 

@@ -51,8 +51,8 @@ Moving to SMD to save space and cost and small spec differences. Everything is r
 - Electromagnets have been changed to 24V from 5V, allowing for less current draw.
         power usage still roughly 2.4-5W per magnet, energized for a split second. 
         power trace length changed from 1mm to 0.5mm (current passed changed from 1-2A to 0.1-0.2A, and clearance reasons), now consistent with data trace width
-- Connectors changed to Adafruit JST-PH 2-Pin SMT right angle connectors
-  (https://www.adafruit.com/product/1769?srsltid=AYCX9vKmg7AnkadIvNh6u-C9kYsipoDEGgflLF5kSu7d5kptqncLCG7TtIA)
+- Connectors changed to Adafruit JST-PH 2-Pin SMT right angle connectors. headers: https://www.adafruit.com/product/1769?srsltid=AYCX9vKmg7AnkadIvNh6u-C9kYsipoDEGgflLF5kSu7d5kptqncLCG7TtIA female connector: https://www.adafruit.com/product/261
+  
   consistent with SMD, slightly smaller package.
   rated for 100V, 2A
 

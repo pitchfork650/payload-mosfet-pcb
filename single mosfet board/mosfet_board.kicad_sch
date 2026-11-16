@@ -844,6 +844,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+5V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -1328,7 +1467,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/17311.pdf"
+		(property "Datasheet" "https://www.adafruit.com/product/1769?srsltid=AYCX9vKmg7AnkadIvNh6u-C9kYsipoDEGgflLF5kSu7d5kptqncLCG7TtIA"
 			(at 125.73 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -1620,6 +1759,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 113.03 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "789b0778-6b81-46c1-94ce-235f6c90f923")
+		(property "Reference" "#PWR02"
+			(at 113.03 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 110.744 61.722 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 113.03 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "292e75cd-0604-438b-9a48-1240e89fa1e6")
+		)
+		(instances
+			(project "mosfet_board"
+				(path "/319cef0f-bf85-495a-8464-9339d157ff46"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D")
 		(at 113.03 72.39 270)
 		(unit 1)
@@ -1733,7 +1949,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b180967a-4282-421f-8d7d-3d8129c75a42")
-		(property "Reference" "100Ω11"
+		(property "Reference" "R1"
 			(at 105.664 89.662 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1806,7 +2022,7 @@
 		(instances
 			(project "mosfet_board"
 				(path "/319cef0f-bf85-495a-8464-9339d157ff46"
-					(reference "100Ω11")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -1986,7 +2202,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "caf9ff23-9877-4079-ac06-43aea3a6057a")
 		(property "Reference" "#FLG01"
 			(at 120.65 64.135 0)
@@ -2000,7 +2215,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 120.65 60.96 0)
+			(at 127.254 62.738 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2065,7 +2280,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e5aefc5d-5d8f-4cbc-83f1-3893027c5fa3")
-		(property "Reference" "10k1"
+		(property "Reference" "R2"
 			(at 116.84 110.236 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2127,7 +2342,7 @@
 		(instances
 			(project "mosfet_board"
 				(path "/319cef0f-bf85-495a-8464-9339d157ff46"
-					(reference "10k1")
+					(reference "R2")
 					(unit 1)
 				)
 			)

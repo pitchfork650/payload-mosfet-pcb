@@ -54,15 +54,19 @@ Moving to SMD to save space and cost and small spec differences. Everything is r
 - Electromagnets have been changed to 24V from 5V, allowing for less current draw.
         power usage still roughly 2.4-5W per magnet, energized for a split second. 
         power trace length changed from 1mm to 0.5mm (current passed changed from 1-2A to 0.1-0.2A, and clearance reasons), now consistent with data trace width
-- Connectors changed to Adafruit JST-PH 2-Pin SMT right angle connectors. headers: https://www.adafruit.com/product/1769?srsltid=AYCX9vKmg7AnkadIvNh6u-C9kYsipoDEGgflLF5kSu7d5kptqncLCG7TtIA female connector: https://www.adafruit.com/product/261
-  
+- Connectors changed to Adafruit JST-PH 2-Pin SMT right angle connectors. headers: https://www.digikey.com/en/products/detail/adafruit-industries-llc/1769/26744172?s=N4IgTCBcDaIFIGUAqBaACgCQARnQSwDsQBdAXyA female connector: https://www.digikey.com/en/products/detail/adafruit-industries-llc/4714/13175532?s=N4IgTCBcDaIFIGUAqBaACgCQARnQSwDsQBdAXyA
   consistent with SMD, slightly smaller package.
   rated for 100V, 2A
 
 
-11/12/2026 V4: 
+11/12/2026 V3.1: 
 Added GND fill, finished ground fill
 Gerber files generated, drill files generated. Awaiting final schematic review.
 Files have been updated.
+
+11/15/2026 v3.2:
+Rounded edges, removed back copper gnd fill (only front copper is needed)
+Changed naming scheme a little, optimized mounting structure
+Changed power trace width to 1mm, so that we have compatibility with 5V magnets for testing (2-4A tolerance)
 
 

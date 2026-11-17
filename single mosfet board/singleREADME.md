@@ -1,3 +1,5 @@
+BOM (regularly updated):
+https://docs.google.com/spreadsheets/d/1GhvSwnAf9CMon1ByXo5QzhSjq0AY9xIbOWyeKYVubww/edit?usp=sharing
 
 Second edition of payload electromagnet release mechanism pcb, energizing one 5V 2A electromagnet using 5V logic signals.
 built upon the dual mosfet board
@@ -64,9 +66,9 @@ Added GND fill, finished ground fill
 Gerber files generated, drill files generated. Awaiting final schematic review.
 Files have been updated.
 
-11/15/2026 v3.2:
+11/15/2026 V3.2:
 Rounded edges, removed back copper gnd fill (only front copper is needed)
 Changed naming scheme a little, optimized mounting structure
 Changed power trace width to 1mm, so that we have compatibility with 5V magnets for testing (2-4A tolerance)
-
+Added TritonUAS logo
 
